@@ -1,0 +1,12 @@
+G@MES ADDED:
+-Jetpack Joyride
+-Subway Surfers San Francisco
+-Idle Breakout
+-Core Ball
+-Super Mario 64
+-NEW FEATURES:
+-Fixed a bug that occured when you loaded a game when a game was already loaded. The bug wouldn't allow the new game to load. It seems like it wouldn't allow the game to access localStorage and indexedDB properly.\n
+-Finished the 'Check for Update' feature.\n
+-Finished adding imports for localStorage and indexedDB site data.\n
+-Added a buggy fullscreen feature. Make sure games are fully loaded, but even then the game may not work.\n
+-Added Google Drive links for games (finally!)

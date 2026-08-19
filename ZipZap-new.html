@@ -99,7 +99,7 @@ backup-l{text-align:center;font-family:Titan One,Helvetica;font-style:italic;fon
 
 <div id="updateb">
 <img class="update" style="position:absolute;top:5px;left:5px;width:50px;height:50px">
-<img class="closei" style="position:absolute;top:5px;right:5px;width:40px;height:40px" onclick="this.parentElement.style.display='none'">
+<img class="closei" style="position:absolute;top:5px;right:5px;width:40px;height:40px;cursor:pointer" onclick="this.parentElement.style.display='none'">
 <h2>Update Available!</h2>
 <p id="vers">Version</p>
 <div><p>Normal Version</p><textarea readonly>Test</textarea><button onclick="copyUpdate(this)">Copy</button>
@@ -302,7 +302,7 @@ gs.forEach((item,ind) => {
   ${item[5][2]?`<button class="wib" title="Requires WiFi even when downloaded; can be DNS bl0cked." onclick="alert(\'This g@me requires WiFi when downloaded, so it can be DNS bl0cked, though unlikely.\')">WiFi</button>`:''}`;
   document.getElementById('gms').appendChild(card);
 });
-document.getElementById('gc').textContent += ` (${gc} g@mes, ${tsz}MB total)`;
+document.getElementById('gc').textContent += ` (${gc} g@mes, ${Math.ceil(tsz*100)/100}MB total)`;
 async function fPly(src, el) {
   setStatus('Fetching...', '#fff');
   window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"});
@@ -617,7 +617,7 @@ document.getElementById('datainput').addEventListener('click', async (event) => 
   this.blur();
 });
 document.getElementById('datadl').addEventListener('click', async (event) => {
-  document.getElementById('datadl').innerText = 'Pasting...';
+  document.getElementById('datadl').innerText = 'Downloading...';
   this.blur();
   try {
     const pastedData = await navigator.clipboard.readText();

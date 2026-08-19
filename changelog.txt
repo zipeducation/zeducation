@@ -1,9 +1,15 @@
+---CHANGELOG FOR 1.05---
+    --19 Aug, 2026--
 --> G@MES ADDED:
 -Jetpack Joyride
 -Subway Surfers San Francisco
 -Idle Breakout
 -Core Ball
 -Super Mario 64
+-Stickman Hook
+-Slope
+-Monkey Mart
+-Vex 8
 --> NEW FEATURES:
 -Fixed a bug that occured when you loaded a game when a game was already loaded. The bug wouldn't allow the new game to load. It seems like it wouldn't allow the game to access localStorage and indexedDB properly.
 -Finished the 'Check for Update' feature.

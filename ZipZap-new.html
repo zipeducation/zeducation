@@ -445,7 +445,8 @@ async function checkUpdate(el) {
     const newest = await response.text();
     newH = newest;
     newS = (Math.ceil(newest.length*1024)/1024000)+'KB';
-    const ver2 = parseInt(newest.substring(27,34));
+    const ver2 = parseFloat(newest.substring(27,34));
+    console.log(ver+', '+ver2);
     if (ver<ver2) {
       updateb.style.display = 'block';
       document.getElementById('prefr').srcdoc = newest;

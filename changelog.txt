@@ -1,18 +1,14 @@
----CHANGELOG FOR 1.05---
-    --19 Aug, 2026--
---> G@MES ADDED:
--Jetpack Joyride
--Subway Surfers San Francisco
--Idle Breakout
--Core Ball
--Super Mario 64
--Stickman Hook
--Slope
--Monkey Mart
--Vex 8
---> NEW FEATURES:
--Fixed a bug that occured when you loaded a game when a game was already loaded. The bug wouldn't allow the new game to load. It seems like it wouldn't allow the game to access localStorage and indexedDB properly.
--Finished the 'Check for Update' feature.
--Finished adding imports for localStorage and indexedDB site data.
--Added a buggy fullscreen feature. Make sure games are fully loaded, but even then the game may not work.
--Added Google Drive links for games (finally!)
+==-CHANGELOG FOR 1.10-==
+    =-30 AUG, 2026-=
+==> G@MES ADDED:
+-Rocking Sky Trip
+-Cluster Rush
+-EaglercraftX 1.14.4
+==> NEW FEATURES:
+-Changed EaglercraftX 1.11.2 to EaglercraftX 1.8.8. It's literally the same thing, but 1.11.2 is just reskinned to 1.14 textures and it performs WAY worse, so that's why I changed it. All of your progress will remain. 1.11.2 will still be available in the Google Drive and on older versions of ZipZap.
+-Disabled the onbeforeload popup for games, because when you tried to load a different game with the popup appearing, the new game wouldn't load.
+-Added the ability to change favicons, which gives the user the ability to fully cloak.
+-Fixed a minor style issue, where the game frame had a margin on the bottom before you loaded a game.
+-Fixed a bug where the game would lose keyboard focus once another element (like a button) was clicked while playing.
+-Gave users the option to opt out of the game closing when data is exported.
+-Fixed the import/export system of game data (maybe?)
